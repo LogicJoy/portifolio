@@ -1,0 +1,159 @@
+<!-- [html:5] Estrutura do HTML da versão 5.
+     HTML5 é a versão mais moderna da linguagem 
+     HyperText Markup Language (Linguagem de Marcação de Hipertexto). 
+     Ele é a espinha dorsal da internet, responsável por estruturar e 
+     dar significado ao conteúdo que você vê em qualquer página web, 
+     como textos, imagens, vídeos e links. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- [head] Aonde fica as configurações do site.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- [link] Atributo usado para vincular recursos externos, como folhas de estilo.
+         ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+         [rel] Atributo usado para especificar a relação entre o documento atual e o recurso vinculado.
+         ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+         [href] Atributo usado para especificar o URL do recurso vinculado. -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- [title] Título da página. -->
+    <title>Catharsis | Portfólio</title>
+</head>
+<!-- [body] Aonde fica o conteúdo principal da página.-->
+
+<body>
+    <!-- [script] É usado para incluir scripts igual JavaScript na página. -->
+    <script src="./script.js"></script>
+    <!-- A classe "Particulas" apenas é uma classe para criar efeitos visuais no fundo do site. -->
+    <div class="particulas"></div>
+
+    <!-- [nav] Menu de navegação (menu). -->
+    <!-- [class] Atributo usado para atribuir uma ou mais classes a um elemento HTML, permitindo que 
+    ele seja estilizado com CSS ou manipulado com JavaScript. -->
+    <nav class="navegacao">
+        <!--[ul] Lista de itens da navegação (menu).-->
+        <ul class="menu">
+            <!-- [li] (abreviação de list item) é o elemento utilizado para representar 
+             itens em listas HTML.
+            ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+            [id] é um atributo usado para identificar de forma única um elemento HTML, 
+            permitindo que ele seja estilizado com CSS ou manipulado com JavaScript.
+            ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+            [a] (de anchor ou âncora) em HTML é utilizada para criar hiperlinks. 
+            Ela permite conectar o usuário a outras páginas da web, arquivos, 
+            endereços de e-mail ou a seções específicas dentro da mesma página.
+            ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+            [htref] é um atributo usado para especificar o URL de destino de um link e é 
+            mais comumente combinado com a tag "a" (âncora) para criar hiperlinks clicáveis. -->
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <!--    [main] Conteúdo principal da página.
+        ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+        [div] Elemento de divisão para organizar o conteúdo.
+        ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+        [img] Elemento para exibir imagens.
+        ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+        [src] Atributo usado para especificar a URL da imagem a ser exibida.
+        ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+        [h1] Elemento de título principal (apenas pode ter um por página).
+        ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+        [h2] Elemento de título secundario (pode ter vários por página igual h3, h4, h5, h6).
+        ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+        [p] Elemento de parágrafo para exibir texto. 
+        ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+        [alt] Atributo usado para especificar um texto alternativo para uma imagem. -->
+    <main id="inicio" class="cabecalho">
+        <img src="./img/pfp_cat.png" alt="Foto de perfil" class="foto-perfil">
+        <h1>KⱯT</h1>
+        <p class="sobre-perfil ">Desenvolvedor | Artista | Músico</p>
+    </main>
+    <!-- [section] Elemento de seção para organizar o conteúdo.-->
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-conteudo">
+            <p class="sobre-paragrafo">
+                Olá! Sou KⱯT, um desenvolvedor apaixonado por tecnologia, arte e música.
+                Com uma experiência diversificada em desenvolvimento de software, design gráfico e produção musical,
+                busco constantemente expandir meus conhecimentos e habilidades.
+                Meu objetivo é criar soluções inovadoras que unam tecnologia e criatividade para impactar positivamente
+                a vida das pessoas.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-conteudo">
+            <div class="projetos-card">
+                <img src="./img/blink.webp" alt="Projeto BLINK!" class="projetos-imagem">
+                <div class="caixa-projetos">
+                    <h3 class="info-projetos">BLINK!</h3>
+                    <p class="info-projetos">Uma ferramenta para gerenciamento de postagens em redes sociais.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/catharsis.jpg" alt="Projeto Catharsis" class="projetos-imagem">
+                <div class="caixa-projetos">
+                    <h3 class="info-projetos">Catharsis</h3>
+                    <p class="info-projetos">Um projeto que junta várias ideias (scripts, ideias de projetos e
+                        experimentos).</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/tl.webp" alt="Projeto de Galeria" class="projetos-imagem">
+                <div class="caixa-projetos">
+                    <h3 class="info-projetos">Galeria</h3>
+                    <p class="info-projetos">Uma plataforma para exibição e compartilhamento de obras artísticas.</p>
+                </div>
+            </div>
+        </div>
+        <!-- [form] Elemento de formulário para coleta de dados do usuário. 
+         ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+         [input] Elemento de entrada para coleta de dados do usuário. 
+         ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+         [textarea] Elemento de entrada de texto multilinha para coleta de dados do usuário. 
+         ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+         [button] Elemento de botão para envio do formulário. 
+         ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+         [placeholder] Atributo usado para especificar um texto de placeholder para 
+         um campo de entrada. -->
+        <section id="contato" class="contato">
+            <h2 class="contato-titulo">Entre em Contato</h2>
+            <!-- [event] Evento que é acionado quando o formulário é enviado.
+                 (Eventos no HTML são ocorrências ou ações que acontecem na página web, 
+                 como um clique do mouse, o envio de um formulário ou o carregamento da página.)
+                 ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+                 [onsubmit] Atributo usado para especificar a função que será chamada quando o formulário for enviado. -->
+            <form class="contato-formulario" id="formulario" onsubmit="enviarMenssagem(event)">
+                <div class="grupo-form">
+                    <input placeholder="Nome" class="campo-form" id="nome">
+                </div>
+                <div class="grupo-form">
+                    <!-- [rows] Atributo usado para especificar o número de linhas para um campo de texto multilinha. 
+                         (Basicamente é o número de linhas que o campo vai ter para a pessoa escrever). -->
+                    <textarea class="campo-form" placeholder="Digite sua Menssagem" rows="6" id="menssagem"></textarea>
+                </div>
+                <!-- [button] Elemento de botão para envio do formulário.
+                         (basicamente um botão para enviar o formulario, só funciona dentro do form").
+                         ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
+                         [type] Atributo usado para especificar o tipo de botão. -->
+                <button type="submit" class="botao-form">Enviar Whatsapp</button>
+            </form>
+        </section>
+    </body>
+
+</html>
